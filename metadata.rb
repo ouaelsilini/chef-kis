@@ -1,6 +1,6 @@
 name 'chef-kis'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Ouael SILINI'
+maintainer_email 'ouael.silini@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures chef-kis'
 long_description 'Installs/Configures chef-kis'
