@@ -19,7 +19,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[chef-kis::default]
+      - recipe[chef-kis::gdal]
     verifier:
       inspec_tests:
         - test/smoke/default

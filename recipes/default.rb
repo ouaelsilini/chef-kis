@@ -19,12 +19,7 @@ execute "install_gdal_#{gdal_version}" do
   command "./configure && make && make install && ldconfig"
 end
 
-execute "check_extraction_ok_gdal_#{gdal_version}" do  
-  cwd "#{gdal_folder}/gdal-#{gdal_version}"
-  not_if { ::Dir.exists? "#{gdal_folder}/gdal-#{gdal_version}" }
-end
-
-execute "check_extraction_ok_gdal_#{gdal_version}" do  
+execute "check_install_ok_gdal_#{gdal_version}" do  
   not_if { ::File.exists? "/usr/local/bin/gdal-config" }
 end
 
